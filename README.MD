@@ -1,5 +1,5 @@
 <img src="https://i.ibb.co/wJCdLm5/screenshot-2.png">
-<h1>Typecho主题 - Beardocs</h1>
+<h1>Typecho主题 - Beargallery</h1>
 一款简洁优雅的Typecho摄影类相册主题<br>
 QQ交流群:561848356<br>
 <a>若主题目录名为typecho-beargallery-master，则需改为beargallery，配套插件目录中的BgCore需放入/usr/plugins中，否则无法正常使用。</a><br>
