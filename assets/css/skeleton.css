@@ -1,0 +1,87 @@
+/*
+* 	Responsive grid pixel system - v1.1
+* 	Copyright 2015, Themedo
+*   Author: Themedo
+* 	Created Date : 06-02-2015
+*/
+.clearfix{
+  *zoom: 1;
+  clear:both;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+/*------------------------------------------------------------------*/ 
+/*	SKELETON OR GRID
+/*------------------------------------------------------------------*/
+.container {
+	max-width: 1130px;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	height:auto;
+	padding:0px 40px;
+	position:relative;
+	clear:both;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.container.full{
+	max-width:100%;
+}
+.row {
+	height:auto;
+} 
+[class*="fl-col"], .fl-sidebar{
+	float: left;
+	margin-right: 4%;
+}
+[class*="fl-col"].float-right{
+	float:right;
+}
+[class*="fl-col"].last, .fl-sidebar.last, [class*="fl-col"].no-space, .fl-col-12{
+	margin-right:0px;
+}
+  
+.fl-col-12 {  width: 100%;      }
+.fl-col-9  {  width: 74%;       }
+.fl-col-8  {  width: 65.3333%;  }
+.fl-col-6  {  width: 48%;       }
+.fl-col-4  {  width: 30.6666%;  }
+.fl-col-3  {  width: 22%;       }
+.fl-sidebar  {  width: 30.6666%;     }
+
+.fl-col-9.no-space  {  width: 78%;  }
+.fl-col-8.no-space  {  width: 69.3333%;  }
+.fl-col-6.no-space  {  width: 52%;  }
+.fl-col-4.no-space  {  width: 34.6666%;  }
+.fl-col-3.no-space  {  width: 26%;  }
+
+@media (max-width: 1040px) {
+.fl-sidebar  {  width: 100%; clear:both; margin-right:0px; padding:50px 0px;  }
+.fl-col-8.fix { width:100%; }
+}
+
+@media (max-width: 768px) {
+.fl-col-12 {  width: 100%;  }
+.fl-col-9  {  width: 100%;  }
+.fl-col-8  {  width: 100%;  }
+.fl-col-6  {  width: 100%;  }
+.fl-col-4  {  width: 100%;  }
+.fl-col-3  {  width: 100%;  }
+}
+
+@media (max-width: 480px) {
+.container{padding:0px 20px;}
+}
+
